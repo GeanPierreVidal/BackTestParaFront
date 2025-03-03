@@ -26,7 +26,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/listadoAtenciones")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         let json=[
             {
@@ -118,7 +118,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/datoPacientexAtencion")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8");
         var data = req.query
         let json=[]
@@ -147,7 +147,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/perfil")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         var data = req.query
         let json=[]
@@ -195,7 +195,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/opcionesXAtencion")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         var data = req.query
         let json=[]
@@ -236,7 +236,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/cie")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         let json=
             [
@@ -306,7 +306,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/alergiasxDni")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         var data = req.query
         let json=[]
@@ -331,7 +331,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/principiosActivos")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         let json=[
             {
@@ -379,7 +379,7 @@ pruebasRouter.route("/estadosAtencion")
     });
 
     pruebasRouter.route("/diagnosticoXAtencion")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         var data = req.query
         let json=[]
@@ -405,7 +405,7 @@ pruebasRouter.route("/estadosAtencion")
         res.json(json);
     });
     pruebasRouter.route("/diagnosticoFavoritos")
-    .get(async function(req,res){
+    .get(mdAutenticacion.verificaToken,async function(req,res){
         res.header("Content-Type", "application/json; charset=utf-8"); 
         let json=[
             
