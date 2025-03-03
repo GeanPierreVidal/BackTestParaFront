@@ -12,13 +12,13 @@ app.use(express.static('public'));
 app.use(cors());
 
 app.get("/",function(req,res){
-    res.send("Servicios para archivo plano");
+    res.send("Servicios para prueba FrontEnd");
 });
 
 require("./routers/routerIndex")(app);
 
 app.listen(port, function () {
-    console.log("MICROSERVICIO para archivo plano READY PORT:" + port);
+    console.log("MICROSERVICIO para prueba de Test:" + port);
 });
 
 //run script assign port command
