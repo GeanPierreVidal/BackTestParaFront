@@ -1,0 +1,37 @@
+{
+    "name": "prueba",
+    "version": "1.0.0",
+    "description": "Microservice prueba",
+    "main": "server.js",
+    "scripts": {
+        "nodemon": "nodemon server.js",
+        "test": "echo \"Error: no hay test especificado\" && exit 1"
+    },
+    "author": "fabrizzio pinedo",
+    "license": "ISC",
+    "dependencies": {
+        "@redoxengine/redox-hl7-v2": "^1.0.1",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "jsontoxml": "^1.0.1",
+        "lodash": "^4.17.21",
+        "mssql": "^9.1.1",
+        "nodemon": "^2.0.2",
+        "pg": "^7.4.3",
+        "sequelize": "^6.30.0",
+        "tedious": "^16.2.0",
+        "xlsx": "^0.18.5",
+        "xml-formatter": "^1.1.0",
+        "xml-parse-from-string": "^1.0.1",
+        "jsonwebtoken": "^8.5.1",
+        "xml2js": "^0.4.19",
+        "xml2js-parser": "^1.1.1"
+
+       
+
+       
+       
+
+    }
+}
